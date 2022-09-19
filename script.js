@@ -26,7 +26,6 @@ const getLocation = () => {
     fetch(API_LINK+ip)
     .then(res => res.json())
     .then(data => {
-        console.log(data);
         ipAddres.textContent = data.ip
         city.textContent = data.location.city
         region.textContent = data.location.region
